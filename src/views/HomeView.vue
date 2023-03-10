@@ -4,11 +4,10 @@ import TableGame from '../components/TableGame.vue';
 import CardGame from '../components/CardGame.vue';
 import HowToRecharge from '../components/HowToRecharge.vue';
 import FooterPage from '../components/FooterPage.vue';
-// import BaseModal from '../components/BaseModal.vue';
 </script>
 
-<template>
 
+<template>
   <main class="h-auto w-full">
     <HeroPage />
 
@@ -22,16 +21,11 @@ import FooterPage from '../components/FooterPage.vue';
 
       <HowToRecharge />
       <FooterPage />
-
-      <div class="w-full flex items-center justify-center lg:py-3">
-        <p class="text-sm text-white">Copyright © BUDFOX 2021-2022. All Rights Reserve</p>
-      </div>
     </div>
 
   </main>
-
-  
 </template>
+
 
 <style scoped>
   .banner{

@@ -23,7 +23,7 @@
                                     <FormInput v-model="password" type="password" placeholder="Password" required/>
                                     <span class="flex items-center justify-between w-full">
                                         <p class="flex items-center gap-x-1 text-sm text-secondary"><input type="checkbox">Remember Password</p>
-                                        <span @click="toggleForgotPassword" class="text-secondary cursor-pointer hover:underline text-sm"><p @click="$emit('close-modal')">Forgot Password</p></span>
+                                        <span @click="toggleForgotPassword" class="text-secondary cursor-pointer hover:underline text-sm"> <p @click="$emit('close-modal')">Forgot Password</p></span>
                                     </span>
                                     <FormButton formBtnText="Login" />
                                 </div>

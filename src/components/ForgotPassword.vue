@@ -14,7 +14,7 @@
                                 <div class="w-full pt-4">
                                     <span class="w-full flex items-center justify-between">
                                         <FormTitle formTitle="Forgot Password" />
-                                        <router-link :to="{ name: ''}" class="text-secondary hover:text-yellow-200 text-base underline flex items-center gap-x-1"> Back <span class="hidden sm:flex">to sign in</span> </router-link>
+                                        <router-link :to="{ name: ''}" @click="toggleSignIn" class="text-secondary hover:text-yellow-200 text-base underline flex items-center gap-x-1"> Back <span class="hidden sm:flex">to sign in</span> </router-link>
                                     </span>
                                 </div>
 
@@ -30,6 +30,7 @@
             </Transition>
         </div>
     </Transition>
+    
 </template>
 
 <script setup>
@@ -42,7 +43,12 @@ import { ref } from "vue";
 
 const email = ref("");
 
-defineEmits(['close-modal'])
+const modalSignIn = ref(null);
+const toggleSignIn = () => {
+    modalSignIn.value = !modalSignIn.value;
+}
+
+defineEmits(['close-modal', 'open-modal'])
 defineProps ({
     modalForgotPassword: {
         type: Boolean,

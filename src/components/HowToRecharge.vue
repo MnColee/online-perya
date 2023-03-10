@@ -3,7 +3,7 @@
         <article class="container mx-auto w-full flex items-center justify-between">
             <div class="w-full flex items-center justify-center">
                 <div class="xl:h-96 xl:w-96 rounded-3xl overflow-hidden">
-                    <img src="/img/paypal.png" alt="img" class="h-full w-full">
+                    <img src="/img/slide1.png" alt="img" class="h-full w-full">
                 </div>
             </div>
             <div class="h-96 w-4 bg-primary rounded-full"></div>

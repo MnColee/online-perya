@@ -1,5 +1,5 @@
 <template>
-    <header class="w-full bg-neutral lg:px-10 lg:py-1">
+    <header class="w-full bg-neutral fixed inset-x-0 top-0 z-50 lg:px-10 lg:py-1">
         <nav class="container mx-auto w-full flex items-center justify-between text-base">
             <RouterLink :to="{ name: 'home' }"><img src="/img/Online Perya Logo.png" alt="logo" class="h-14"></RouterLink>
             <ul class="flex items-center gap-x-6">
@@ -18,14 +18,11 @@ import { ref } from "vue"
 import ButtonPrimary from './ButtonPrimary.vue';
 import SignUpForm from './SignUpForm.vue';
 import SignInForm from './SignInForm.vue';
-
 const modalSignUp = ref(null);
 const modalSignIn = ref(null);
-
 const toggleSignUp = () => {
     modalSignUp.value = !modalSignUp.value;
 }
-
 const toggleSignIn = () => {
     modalSignIn.value = !modalSignIn.value;
 }
@@ -35,7 +32,6 @@ const toggleSignIn = () => {
     .bg-neutral {
         background-color: #37383A;
     }
-
     .bg-sign {
         background-color: #E0E421;
     }

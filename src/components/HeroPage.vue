@@ -1,5 +1,5 @@
 <template>
-    <section class="w-full bg-gradient lg:px-10 lg:py-8">
+    <section class="w-full bg-gradient mt-10 lg:mt-16 lg:px-10 lg:py-8">
         <article class="container mx-auto w-full flex items-center justify-between">
             <div class="lg:w-1/2">
                 <div class="w-full">

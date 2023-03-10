@@ -25,7 +25,7 @@
                                     <FormInput v-model="email" type="email" placeholder="Email" required/>
                                     <FormInput v-model="password" type="password" placeholder="Password" required/>
                                     <span class="flex items-center justify-between w-full">
-                                        <p class="flex items-center gap-x-1 text-sm text-secondary"><input type="checkbox" class="bg-transparent border border-yellow-300 text-transparent">Terms and Condition</p>
+                                        <p class="flex items-center gap-x-1 text-sm text-secondary"><input type="checkbox" class="cursor-pointer bg-transparent border border-yellow-300 text-transparent">Terms and Condition</p>
                                     </span>
                                     <FormButton formBtnText="Create Account" />
                                 </div>

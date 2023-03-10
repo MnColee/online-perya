@@ -25,7 +25,7 @@
                         <h3 class="text-white font-bold lg:text-lg xl:text-xl">Quick links</h3>
                         <router-link :to="{name: ''}" class="text-quicklinks">FAQ</router-link>
                         <router-link :to="{name: ''}" class="text-quicklinks">Withdrawal Terms</router-link>
-                        <router-link :to="{name: ''}" class="text-quicklinks">Terms and Conditions</router-link>
+                        <router-link :to="{name: 'TermsAndCondition'}" class="text-quicklinks">Terms and Conditions</router-link>
                         <router-link :to="{name: ''}" class="text-quicklinks">Privacy Policy</router-link>
                     </div>
 
@@ -36,6 +36,12 @@
                     </div>
                 </div>
             </article>
+        </section>
+
+        <section class="w-full bg-foot-note">
+            <div class="w-full flex items-center justify-center lg:py-3">
+                <p class="text-sm text-white">Copyright © BUDFOX 2021-2022. All Rights Reserve</p>
+            </div>
         </section>
     </div>
 </template>
@@ -61,5 +67,9 @@
     background-color: #434447;
     -webkit-clip-path: polygon(9% 36%, 98% 9%, 100% 100%, 0% 100%);
     clip-path: polygon(9% 36%, 98% 9%, 100% 100%, 0% 100%);
+}
+
+.bg-foot-note {
+    background-color: #9DA017;
 }
 </style>
