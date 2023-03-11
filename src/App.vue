@@ -5,7 +5,7 @@ import NavigationBar from './components/NavigationBar.vue';
 
 <template>
   <div v-cloak>
-    <NavigationBar />
+    <NavigationBar v-if="!$route.meta.hideNavbar" />
     <RouterView />
   </div>
 </template>
